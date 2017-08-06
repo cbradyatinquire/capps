@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D253BF37971921AA5B52EE8 /* Pods_Capps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1DD33328DD9FC1F8D99517 /* Pods_Capps.framework */; };
 		6602BFCD1F324C9200E8C851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFCC1F324C9200E8C851 /* AppDelegate.swift */; };
 		6602BFCF1F324C9200E8C851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFCE1F324C9200E8C851 /* ViewController.swift */; };
 		6602BFD21F324C9200E8C851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6602BFD01F324C9200E8C851 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		6602BFD71F324C9200E8C851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6602BFD51F324C9200E8C851 /* LaunchScreen.storyboard */; };
 		6602BFE21F324C9300E8C851 /* CappsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFE11F324C9300E8C851 /* CappsTests.swift */; };
 		6602BFED1F324C9300E8C851 /* CappsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFEC1F324C9300E8C851 /* CappsUITests.swift */; };
+		663999F91F33CC7C00EAAD16 /* constructs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 663999F81F33CC7C00EAAD16 /* constructs.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28457DD66A1D1A560062BE5D /* Pods-Capps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capps.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capps/Pods-Capps.release.xcconfig"; sourceTree = "<group>"; };
+		3C37BAA8E6672F15B8EB9CE9 /* Pods_Capps_CappsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capps_CappsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6602BFC91F324C9200E8C851 /* Capps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6602BFCC1F324C9200E8C851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6602BFCE1F324C9200E8C851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		6602BFE81F324C9300E8C851 /* CappsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6602BFEC1F324C9300E8C851 /* CappsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappsUITests.swift; sourceTree = "<group>"; };
 		6602BFEE1F324C9300E8C851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		663999F81F33CC7C00EAAD16 /* constructs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = constructs.txt; path = Capps/Assets.xcassets/constructs.txt; sourceTree = "<group>"; };
+		6E7FC74FD2455CAB5ACE49CF /* Pods_Capps_CappsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capps_CappsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		888E37A09E74BF47CECEF026 /* Pods_CappsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CappsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6997F832162FC0B113CE1B /* Pods_CappsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CappsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1DD33328DD9FC1F8D99517 /* Pods_Capps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F064990C29768A3D6A957BB0 /* Pods-Capps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capps/Pods-Capps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D253BF37971921AA5B52EE8 /* Pods_Capps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +88,13 @@
 		6602BFC01F324C9200E8C851 = {
 			isa = PBXGroup;
 			children = (
+				663999F81F33CC7C00EAAD16 /* constructs.txt */,
 				6602BFCB1F324C9200E8C851 /* Capps */,
 				6602BFE01F324C9200E8C851 /* CappsTests */,
 				6602BFEB1F324C9300E8C851 /* CappsUITests */,
 				6602BFCA1F324C9200E8C851 /* Products */,
+				6BED5D9379115E51171E940D /* Pods */,
+				7A53285A1D82FD6DAB92A948 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +139,27 @@
 			path = CappsUITests;
 			sourceTree = "<group>";
 		};
+		6BED5D9379115E51171E940D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F064990C29768A3D6A957BB0 /* Pods-Capps.debug.xcconfig */,
+				28457DD66A1D1A560062BE5D /* Pods-Capps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A53285A1D82FD6DAB92A948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1DD33328DD9FC1F8D99517 /* Pods_Capps.framework */,
+				8A6997F832162FC0B113CE1B /* Pods_CappsTests.framework */,
+				888E37A09E74BF47CECEF026 /* Pods_CappsUITests.framework */,
+				3C37BAA8E6672F15B8EB9CE9 /* Pods_Capps_CappsTests.framework */,
+				6E7FC74FD2455CAB5ACE49CF /* Pods_Capps_CappsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6602BFF11F324C9300E8C851 /* Build configuration list for PBXNativeTarget "Capps" */;
 			buildPhases = (
+				FCF56170E3D15758E06C56CD /* [CP] Check Pods Manifest.lock */,
 				6602BFC51F324C9200E8C851 /* Sources */,
 				6602BFC61F324C9200E8C851 /* Frameworks */,
 				6602BFC71F324C9200E8C851 /* Resources */,
+				5BFF2D8D235875662FF98697 /* [CP] Embed Pods Frameworks */,
+				29642C71BA7E4C455EC733E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,7 @@
 				TargetAttributes = {
 					6602BFC81F324C9200E8C851 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HRSCX6Y3LP;
 						ProvisioningStyle = Automatic;
 					};
 					6602BFDC1F324C9200E8C851 = {
@@ -234,6 +273,7 @@
 			files = (
 				6602BFD71F324C9200E8C851 /* LaunchScreen.storyboard in Resources */,
 				6602BFD41F324C9200E8C851 /* Assets.xcassets in Resources */,
+				663999F91F33CC7C00EAAD16 /* constructs.txt in Resources */,
 				6602BFD21F324C9200E8C851 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +293,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29642C71BA7E4C455EC733E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capps/Pods-Capps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BFF2D8D235875662FF98697 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capps/Pods-Capps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF56170E3D15758E06C56CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6602BFC51F324C9200E8C851 /* Sources */ = {
@@ -410,25 +498,33 @@
 		};
 		6602BFF21F324C9300E8C851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F064990C29768A3D6A957BB0 /* Pods-Capps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HRSCX6Y3LP;
 				INFOPLIST_FILE = Capps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inquirelearning.Capps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		6602BFF31F324C9300E8C851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28457DD66A1D1A560062BE5D /* Pods-Capps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HRSCX6Y3LP;
 				INFOPLIST_FILE = Capps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inquirelearning.Capps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -505,6 +601,7 @@
 				6602BFF31F324C9300E8C851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6602BFF41F324C9300E8C851 /* Build configuration list for PBXNativeTarget "CappsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +610,7 @@
 				6602BFF61F324C9300E8C851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6602BFF71F324C9300E8C851 /* Build configuration list for PBXNativeTarget "CappsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +619,7 @@
 				6602BFF91F324C9300E8C851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
