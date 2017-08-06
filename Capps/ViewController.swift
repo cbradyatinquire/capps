@@ -12,7 +12,7 @@ import TagListView
 
 
     
-    class ViewController: UIViewController, UIImagePickerControllerDelegate,UIPopoverControllerDelegate,UINavigationControllerDelegate, TagListViewDelegate {
+    class ViewController: UIViewController, UIImagePickerControllerDelegate,UIPopoverControllerDelegate,UINavigationControllerDelegate, TagListViewDelegate, UITableViewDelegate, UITableViewDataSource {
         
         @IBOutlet var TLV: TagListView!
         
@@ -20,6 +20,8 @@ import TagListView
         var picker:UIImagePickerController?=UIImagePickerController()
         
         @IBOutlet var fullConstructView: UITextView!
+        
+        @IBOutlet var RosterView: UITableView!
         
         @IBOutlet weak var imageView: UIImageView!
         
@@ -30,13 +32,18 @@ import TagListView
         var  descriptions:[String:String] = [:]
         var  examples:[String:String] = [:]
         
+        var rosterColumns:[String] = ["Identifier", "Name"]
+        var students:[String] = ["Amanda Huginkiss", "George Washington"]
+        var identifiers:[String] = ["001", "002"]
+        var selectedStudentName: String = ""
+        var selectedStudentID: String = ""
         
         override func viewDidLoad() {
             super.viewDidLoad()
             picker?.delegate=self
             readDataFromFile()
             setupTags()
-            
+            setupRoster()
         }
         
         func setupTags() {
@@ -219,6 +226,75 @@ import TagListView
         func getStringFieldsForRow(row:String, delimiter:String)-> [String]{
             return row.components(separatedBy: delimiter)
         }
+        
+        
+        func setupRoster() {
+            loadRosterData()
+            RosterView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+            
+            RosterView.dataSource = self
+            RosterView.delegate = self
+        }
+        
+        func loadRosterData() {
+            let fileName = "roster"
+            let fileType = "txt"
+            
+            guard let path = Bundle.main.path(forResource: fileName, ofType: fileType)
+                else {
+                    print("Can't load file \(fileName).\(fileType)")
+                    return
+            }
+            do {
+                let names = try String(contentsOfFile:path, encoding: String.Encoding.utf8)
+                convertRoster(file: cleanRows(file: names))
+            } catch {
+                print ("File Read Error")
+            }
+            
+            
+        }
+        
+        func convertRoster(file:String) {
+            let rows = cleanRows(file: file).components(separatedBy: "\n")
+            if rows.count > 0 {
+                students = []
+                identifiers = []
+                
+                for row in rows{
+                    let fields = getStringFieldsForRow(row: row,delimiter: "|")
+                    if fields.count == 2 {
+                        students.append( fields.last! )
+                        identifiers.append( fields.first! )
+                    }
+                }
+            } else {
+                print("No data in file")
+            }
+        }
+        
+        //Table view methods
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("Row Num: \(indexPath.row)")
+            print("Name: \(students[indexPath.row])")
+            print("Identifier: \(identifiers[indexPath.row])")
+            selectedStudentName = students[indexPath.row]
+            selectedStudentID = identifiers[indexPath.row]
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return students.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
+            cell.textLabel!.text = "\(students[indexPath.row])"
+            let view = UIView()
+            view.backgroundColor = UIColor(red: 66/255, green: 179/255, blue: 244/255, alpha: 1)
+            cell.selectedBackgroundView = view
+            return cell
+        }
+        
         
     }
     

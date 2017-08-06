@@ -16,6 +16,7 @@
 		6602BFE21F324C9300E8C851 /* CappsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFE11F324C9300E8C851 /* CappsTests.swift */; };
 		6602BFED1F324C9300E8C851 /* CappsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6602BFEC1F324C9300E8C851 /* CappsUITests.swift */; };
 		663999F91F33CC7C00EAAD16 /* constructs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 663999F81F33CC7C00EAAD16 /* constructs.txt */; };
+		66C63E9F1F37BCDF002E0E96 /* roster.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66C63E9E1F37BCDF002E0E96 /* roster.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6602BFEC1F324C9300E8C851 /* CappsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappsUITests.swift; sourceTree = "<group>"; };
 		6602BFEE1F324C9300E8C851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663999F81F33CC7C00EAAD16 /* constructs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = constructs.txt; path = Capps/Assets.xcassets/constructs.txt; sourceTree = "<group>"; };
+		66C63E9E1F37BCDF002E0E96 /* roster.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = roster.txt; sourceTree = "<group>"; };
 		6E7FC74FD2455CAB5ACE49CF /* Pods_Capps_CappsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capps_CappsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		888E37A09E74BF47CECEF026 /* Pods_CappsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CappsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6997F832162FC0B113CE1B /* Pods_CappsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CappsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				663999F81F33CC7C00EAAD16 /* constructs.txt */,
+				66C63E9E1F37BCDF002E0E96 /* roster.txt */,
 				6602BFCB1F324C9200E8C851 /* Capps */,
 				6602BFE01F324C9200E8C851 /* CappsTests */,
 				6602BFEB1F324C9300E8C851 /* CappsUITests */,
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C63E9F1F37BCDF002E0E96 /* roster.txt in Resources */,
 				6602BFD71F324C9200E8C851 /* LaunchScreen.storyboard in Resources */,
 				6602BFD41F324C9200E8C851 /* Assets.xcassets in Resources */,
 				663999F91F33CC7C00EAAD16 /* constructs.txt in Resources */,

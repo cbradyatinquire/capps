@@ -7,5 +7,6 @@ target 'Capps' do
 
   # Pods for Capps
   pod 'TagListView', '~> 1.0'
+  pod 'DLRadioButton', '~> 1.4'
 
 end
