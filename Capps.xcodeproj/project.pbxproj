@@ -500,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F064990C29768A3D6A957BB0 /* Pods-Capps.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HRSCX6Y3LP;
 				INFOPLIST_FILE = Capps/Info.plist;
@@ -516,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28457DD66A1D1A560062BE5D /* Pods-Capps.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HRSCX6Y3LP;
 				INFOPLIST_FILE = Capps/Info.plist;
