@@ -289,8 +289,9 @@ import TagListView
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath as IndexPath)
             cell.textLabel!.text = "\(students[indexPath.row])"
+            cell.textLabel!.font = UIFont.systemFont(ofSize: 24)
             let view = UIView()
-            view.backgroundColor = UIColor(red: 66/255, green: 179/255, blue: 244/255, alpha: 1)
+            view.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 255/255, alpha: 1)
             cell.selectedBackgroundView = view
             return cell
         }
